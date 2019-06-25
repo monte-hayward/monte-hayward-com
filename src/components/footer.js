@@ -6,8 +6,8 @@ import { FaLinkedinIn, FaTwitter, FaAngellist, FaGithub, FaEnvelope } from 'reac
 const Footer = ({ siteMetadata }) => {
 
   return (
-    <footer className="bg-gray-700 h-24 p-8 text-sm">
-      <nav className="flex justify-between p-0 w-full">
+    <footer className="bg-gray-700 h-24 p-3 text-sm">
+      <nav className="flex justify-between p-2 w-full">
         <a href={siteMetadata.linkedin} title="LinkedIn">
           <FaLinkedinIn size="1.25rem" color="white"/>
         </a>
@@ -31,7 +31,7 @@ const Footer = ({ siteMetadata }) => {
 
         <Link to={'/privacy/'} className="font-bold no-underline text-white">Privacy</Link>
       </nav>
-      <p className="no-underline h-12 p-2 text-white text-sm text-center mx-auto">
+      <p className="no-underline h-12 p-2 my-0 text-white text-sm text-center mx-auto">
         &copy; {siteMetadata.dateInception} - {new Date().getFullYear()} Copyright {siteMetadata.author}
       </p>
     </footer>
