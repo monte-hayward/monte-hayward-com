@@ -28,7 +28,7 @@ module.exports = {
         background_color: 'rgba(255,0,0,1)',
         theme_color: 'rgba(0,255,0,1)',
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/mh-icon-sq-black-on-white.png`
       }
     },
     `gatsby-plugin-postcss`,

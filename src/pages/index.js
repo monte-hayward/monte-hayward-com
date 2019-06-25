@@ -6,6 +6,8 @@ import SEO from "../components/seo";
 import { graphql, StaticQuery } from "gatsby";
 import { FaReact, FaJs, FaLinkedinIn, FaTwitter, FaAngellist, FaGithub, FaEnvelope } from "react-icons/fa";
 
+// TODO: Skills by Github palette. E.g. HTML #F1E059, CSS #563D7C
+
 function IndexPage() {
   return (
     <StaticQuery
@@ -54,7 +56,7 @@ function IndexPage() {
               tags={['React.js', 'Redux']}
             />
             <Card
-              icon={<FaJs size="100%" color="rgb(97, 218, 251)" alt="ReactJS" className="object-contain object-center"/>}
+              icon={<FaJs size="100%" color="#F1E059" alt="JavaScript" className="object-contain object-center"/>}
               caption="JavaScript"
               description="Career devoted to production JavaScript"
               tags={['ES6', 'ES7', 'EcmaScript']}
