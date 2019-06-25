@@ -1,3 +1,7 @@
+.cache
+public
+tailwind.config.js
+
 # Logs
 logs
 *.log
