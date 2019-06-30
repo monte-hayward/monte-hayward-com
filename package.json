@@ -1,10 +1,10 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "code@montehayward.com",
   "dependencies": {
-    "gatsby": "2.10.4",
+    "gatsby": "2.11.6",
     "gatsby-plugin-manifest": "2.2.0",
     "gatsby-plugin-postcss": "2.1.0",
     "gatsby-plugin-purgecss": "4.0.0",
