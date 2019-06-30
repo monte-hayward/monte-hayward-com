@@ -25,10 +25,10 @@ module.exports = {
         name: `gatsby-starter-tailwind`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: 'rgba(255,0,0,1)',
-        theme_color: 'rgba(0,255,0,1)',
+        background_color: '#ffffff',
+        theme_color: '#4dc0b5',
         display: `minimal-ui`,
-        icon: `src/images/mh-icon-sq-black-on-white.png`
+        icon: `src/images/mh-icon-512.png`
       }
     },
     `gatsby-plugin-postcss`,
