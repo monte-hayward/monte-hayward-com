@@ -3,9 +3,8 @@ import Img from 'gatsby-image';
 import Hashtags from './hashtag';
 
 const CaseStudyItem = ({ fluid, caption, description, tags }) => {
-  // or fixed
   return (
-    <figure className="flex flex-col max-w-sm rounded overflow-hidden shadow-lg m-1">
+    <figure className="flex-none md:w-5/12 w-full rounded overflow-hidden shadow md:shadow-md md:mx-1 my-2">
       <Img
         fluid={fluid}
         fit="sharp.fit.contain"

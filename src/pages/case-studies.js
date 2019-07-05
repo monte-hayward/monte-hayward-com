@@ -20,43 +20,48 @@ const CaseStudiesList = props => {
         'SaaS',
         'User Experience Engineer'
       ]}/>
-      <h4>Products Developed</h4>
+      <section>
+        <h4>Products Developed</h4>
+        <div className="flex flex-wrap flex-row justify-around mt-3 mb-3">
 
-      <CaseStudyItem
-        fluid={d.dashboard.childImageSharp.fluid}
-        caption="dashboard"
-        description="stuff described"
-        tags={['d3.js', 'backbone.js']}
-      />
+          <CaseStudyItem
+            fluid={d.formApp.childImageSharp.fluid}
+            caption="Payments Application"
+            description="An embeddable form accepting credit cards and eCheck through a PCI-compliant platform."
+            tags={['JavaScript', 'SCSS', 'jQuery', 'JSON']}
+          />
 
-      <CaseStudyItem
-        fluid={d.cognitive.childImageSharp.fluid}
-        caption="Cognitive Video Search"
-        description="IBM Watson"
-        tags={['React.js', 'Redux.js', 'SPA']}
-      />
+          <CaseStudyItem
+            fluid={d.profileEditor.childImageSharp.fluid}
+            caption="Profile Editor"
+            description="An app to enable users to personalize their appeal for payments."
+            tags={['JavaScript', 'jQuery', 'JSON']}
+          />
 
-      <CaseStudyItem
-        fluid={d.formApp.childImageSharp.fluid}
-        caption="Payments Form Application"
-        description="An embeddable form accepting credit cards and eCheck through a PCI-compliant platform."
-        tags={['JavaScript', 'jQuery', 'JSON']}
-      />
+          <CaseStudyItem
+            fluid={d.cognitive.childImageSharp.fluid}
+            caption="Cognitive Video Search"
+            description="Have a massive video collection? Ask it questions in natural language."
+            tags={['React.js', 'Redux.js', 'SPA', 'IBM Watson']}
+          />
 
-      <CaseStudyItem
-        fluid={d.profileEditor.childImageSharp.fluid}
-        caption="Profile Editor"
-        description="An app to enable users to personalize their appeal for payments."
-        tags={['JavaScript', 'jQuery', 'JSON']}
-      />
+          <CaseStudyItem
+            fluid={d.checkoutIpad.childImageSharp.fluid}
+            caption="Insurance Purchasing App"
+            description="Single Page App empowering end-users to compare brands, quote, and bind car insurance."
+            tags={['JavaScript', 'Ember', 'CSS']}
+          />
 
-      <CaseStudyItem
-        fluid={d.checkoutIpad.childImageSharp.fluid}
-        caption="Insurance Purchasing App"
-        description="Single Page App empowering end-users to compare brands, quote, and bind car insurance."
-        tags={['JavaScript', 'Ember', 'CSS']}
-      />
+          <CaseStudyItem
+            fluid={d.dashboard.childImageSharp.fluid}
+            caption="dashboard"
+            description="stuff described"
+            tags={['d3.js', 'backbone.js']}
+          />
 
+
+        </div>
+      </section>
     </Layout>
   )
 };
@@ -65,7 +70,7 @@ export const fluidImage = graphql`
     fragment fluidImage on File {
         childImageSharp {
             fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
             }
         }

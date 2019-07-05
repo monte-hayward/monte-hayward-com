@@ -59,6 +59,18 @@ ul {
 p {
     @apply my-3;
 }
+
+section {
+    @apply px-1 py-2;
+}
+
+@screen md {
+    section {
+        max-width: 94rem;
+        @apply px-8 mx-auto;
+    }
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -69,6 +81,8 @@ p {
  */
 
 @tailwind utilities;
+
+
 
 /**
  * Here you would add any custom utilities you need that don't come out of the
