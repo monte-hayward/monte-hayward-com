@@ -34,7 +34,7 @@ function IndexPage() {
       render={data => {
         const d = data.site.siteMetadata;
         return (<Layout>
-          <SEO title="Home" keywords={d.keywords}/>
+          <SEO title={d.title} keywords={d.keywords}/>
 
           <section className="mt-3 mb-3">
             <a id="about"/>
