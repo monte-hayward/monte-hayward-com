@@ -29,14 +29,14 @@ function Layout({ children }) {
       }
       `}
       render={data => (
-        <div className="flex flex-col font-sans min-h-screen text-gray-900">
+        <>
           <Header siteTitle={data.site.siteMetadata.title} />
 
           <main className="flex flex-col flex-1 md:justify-center w-full">
             {children}
           </main>
           <Footer siteMetadata={data.site.siteMetadata} />
-        </div>
+        </>
       )}
     />
   );
