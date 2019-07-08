@@ -41,7 +41,7 @@ const CaseStudiesList = props => {
           <CaseStudyItem
             fluid={d.cognitive.childImageSharp.fluid}
             caption="Cognitive Video Search"
-            description="Have a massive video collection? Ask it questions in natural language."
+            description="Navigating a massive video collection? Ask it questions in natural language."
             tags={['React.js', 'Redux.js', 'SPA', 'IBM Watson']}
           />
 
@@ -54,8 +54,8 @@ const CaseStudiesList = props => {
 
           <CaseStudyItem
             fluid={d.dashboard.childImageSharp.fluid}
-            caption="dashboard"
-            description="stuff described"
+            caption="Product Marketing Dashboard"
+            description="Analytics and tools for professional buyers in retail companies."
             tags={['d3.js', 'backbone.js']}
           />
 
@@ -69,8 +69,8 @@ const CaseStudiesList = props => {
 export const fluidImage = graphql`
     fragment fluidImage on File {
         childImageSharp {
-            fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid_tracedSVG
+            fluid(maxWidth: 1040, maxHeight: 966, fit: COVER, cropFocus: NORTHWEST) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 presentationWidth
             }
         }
@@ -85,14 +85,30 @@ export const pageQuery = graphql`
         profileEditor: file(relativePath: {eq: "product-screenshots/profile-editor.png"}) {
             ...fluidImage
         }
-        checkoutIpad: file(relativePath: {eq: "product-screenshots/checkout-ipad.png"}) {
-            ...fluidImage
+        checkoutIpad: file(relativePath: {eq: "product-screenshots/compare-auto.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 1083, maxHeight: 780, fit: COVER, cropFocus: NORTHWEST) {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    presentationWidth
+                }
+            }
         }
+    
         cognitive: file(relativePath: {eq: "product-screenshots/cognitive-search-meditation-empathy.png"}) {
-            ...fluidImage
+            childImageSharp {
+                fluid(maxWidth: 1083, maxHeight: 780, fit: COVER, cropFocus: NORTH) {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    presentationWidth
+                }
+            }
         }
         dashboard: file(relativePath: {eq: "product-screenshots/product-marketing-dashboard.png"}) {
-            ...fluidImage
+            childImageSharp {
+                fluid(maxWidth: 1040, maxHeight: 780, fit: COVER, cropFocus: NORTHWEST) {
+                    ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    presentationWidth
+                }
+            }
         }
     }`;
 

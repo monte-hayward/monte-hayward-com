@@ -7,7 +7,10 @@ const CaseStudyItem = ({ fluid, caption, description, tags }) => {
     <figure className="flex-none md:w-5/12 w-full rounded overflow-hidden shadow md:shadow-md md:mx-1 my-2">
       <Img
         fluid={fluid}
-        fit="sharp.fit.contain"
+        fit="sharp.fit.cover"
+        maxWidth="1040"
+        maxHeight="1040"
+        imgStyle={{ border: `1px solid rgba(205, 205, 205, 1)`, borderRadius: `4px` }}
       />
       <figcaption className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{caption}</div>
