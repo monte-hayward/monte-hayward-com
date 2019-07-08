@@ -63,14 +63,28 @@ p {
 #gatsby-focus-wrapper {
     @apply font-sans min-h-screen;
 }
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    @apply w-screen bg-white;
+}
 header nav, main, footer nav {
     @apply px-1 py-2 text-gray-900;
+}
+
+main {
+    @apply mt-6;
 }
 
 @screen md {
     header nav, main, footer nav {
         max-width: 94rem;
-        @apply px-8 mx-auto ;
+        @apply px-8 mx-auto;
+    }
+    header {
+        position: relative;
     }
 }
 

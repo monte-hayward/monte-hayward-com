@@ -7,7 +7,7 @@ function Header({ siteTitle }) {
   return (
     <header>
       <nav>
-        <div className="flex flex-wrap items-center justify-between py-4 md:py-8 text-gray-7">
+        <div className="flex flex-wrap items-center justify-between text-gray-7">
           <Link to="/" className="flex items-center no-underline">
             <span className="font-bold text-xl tracking-tight">{siteTitle}</span>
           </Link>
