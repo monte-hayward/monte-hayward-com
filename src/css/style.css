@@ -59,6 +59,41 @@ ul {
 p {
     @apply my-3;
 }
+
+#gatsby-focus-wrapper {
+    @apply flex flex-col justify-between font-sans min-h-screen h-screen;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    @apply w-screen bg-white;
+}
+header nav, main, footer nav {
+    @apply px-1 py-2 text-gray-900;
+}
+
+main {
+    @apply mt-6;
+}
+
+@screen md {
+    header nav, main, footer nav {
+        max-width: 94rem;
+        @apply px-8 mx-auto;
+    }
+    header {
+        position: relative;
+    }
+}
+
+section {
+    @apply mb-3;
+}
+
+
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -69,6 +104,8 @@ p {
  */
 
 @tailwind utilities;
+
+
 
 /**
  * Here you would add any custom utilities you need that don't come out of the
