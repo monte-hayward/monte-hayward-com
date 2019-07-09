@@ -61,7 +61,7 @@ p {
 }
 
 #gatsby-focus-wrapper {
-    @apply font-sans min-h-screen;
+    @apply flex flex-col justify-between font-sans min-h-screen h-screen;
 }
 
 header {
@@ -91,6 +91,7 @@ main {
 section {
     @apply mb-3;
 }
+
 
 
 /**
