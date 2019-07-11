@@ -5,7 +5,7 @@ import Hashtags from "./hashtag";
 const Card = ({ icon, caption, description, tags }) => {
 
   return (
-    <figure className="flex flex-col max-w-sm rounded overflow-hidden shadow-lg m-1">
+    <figure className="flex flex-col w-1/4 rounded overflow-hidden shadow-lg m-1">
       {icon}
       <figcaption className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{caption}</div>
