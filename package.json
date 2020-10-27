@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -46,7 +46,7 @@
   "devDependencies": {
     "babel-eslint": "10.0.2",
     "eslint": "6.1.0",
-    "eslint-config-react-app": "4.0.1",
+    "eslint-config-react-app": "6.0.0",
     "eslint-plugin-flowtype": "3.12.2",
     "eslint-plugin-graphql": "3.0.3",
     "eslint-plugin-import": "2.18.2",
