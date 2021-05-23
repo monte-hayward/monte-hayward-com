@@ -1,3 +1,13 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://monte.io',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV
+} = process.env;
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
+
 module.exports = {
   siteMetadata: {
     author: 'Monte Hayward',
@@ -13,7 +23,7 @@ module.exports = {
     github: `https://github.com/monte-hayward`,
     medium: 'https://medium.com/@rulesetio',
     gatsby: 'https://www.gatsbyjs.org/',
-    siteUrl: `https://www.montehayward.com`,
+    siteUrl,
     dateInception: `2014`,
   },
   plugins: [
@@ -58,5 +68,20 @@ module.exports = {
 
     // PWA - Progressive Web Application - offline
     `gatsby-plugin-offline`,
-  ]
+
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: '*' }],
+          },
+          'branch-deploy': { policy: [{ userAgent: '*', disallow: ['/'] }], sitemap: null, host: null },
+          'deploy-preview': { policy: [{ userAgent: '*', disallow: ['/'] }], sitemap: null, host: null },
+        },
+      }
+    },
+
+  ],
 };
