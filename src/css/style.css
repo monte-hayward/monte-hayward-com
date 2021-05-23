@@ -38,7 +38,7 @@
 
 /** custom component or global classes **/
 a {
-    @apply text-blue-700;
+    color: rgb(43, 108, 176);
 }
 a:hover {
     @apply underline;
