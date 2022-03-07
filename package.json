@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -32,7 +32,7 @@
     "gatsby-plugin-sharp": "3.5.0",
     "gatsby-source-filesystem": "3.5.0",
     "gatsby-transformer-sharp": "3.5.0",
-    "graphql": "15.5.0",
+    "graphql": "15.8.0",
     "postcss": "^8.1.13",
     "prop-types": "15.7.2",
     "react": "17.0.2",
