@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -60,7 +60,7 @@
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.23.2",
     "prettier": "2.3.0",
-    "tailwindcss": "2.1.2"
+    "tailwindcss": "2.2.19"
   },
   "repository": {
     "type": "git",
