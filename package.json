@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -40,7 +40,7 @@
     "react-helmet": "6.1.0",
     "react-icons": "4.2.0",
     "sharp": "0.28.2",
-    "typescript": ">=2.8.0",
+    "typescript": "4.8.3",
     "webpack": "^5.0.0"
   },
   "keywords": [
