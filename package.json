@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "4.25.0",
     "@typescript-eslint/parser": "4.25.0",
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "10.4.12",
     "eslint-plugin-react-hooks": "^4.0.8",
     "gatsby": "3.5.1",
     "gatsby-image": "3.5.0",
