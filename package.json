@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -29,7 +29,7 @@
     "gatsby-plugin-postcss": "4.5.0",
     "gatsby-plugin-purgecss": "6.0.2",
     "gatsby-plugin-react-helmet": "4.5.0",
-    "gatsby-plugin-sharp": "3.5.0",
+    "gatsby-plugin-sharp": "4.25.1",
     "gatsby-source-filesystem": "3.5.0",
     "gatsby-transformer-sharp": "3.5.0",
     "graphql": "15.5.0",
