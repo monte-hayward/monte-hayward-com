@@ -1,7 +1,7 @@
 {
   "name": "@monte-hayward/monte-hayward-com",
   "description": "MonteHayward.com",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "author": "code@montehayward.com",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
@@ -18,8 +18,8 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "4.25.0",
-    "@typescript-eslint/parser": "4.25.0",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
     "autoprefixer": "^10.0.2",
     "eslint-plugin-react-hooks": "^4.0.8",
     "gatsby": "3.5.1",
